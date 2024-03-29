@@ -1,0 +1,21 @@
+{
+    "name": "potter/session-trait",
+    "description": "PHP Session Trait",
+    "type": "library",
+    "require": {
+        "php": "^8.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Potter\\Session\\": "src/Potter/Session/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jay Potter",
+            "email": "j@ypotter.ca"
+        }
+    ],
+    "minimum-stability": "dev"
+}
