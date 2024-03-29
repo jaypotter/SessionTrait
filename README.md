@@ -1,0 +1,2 @@
+# SessionTrait
+PHP Session Trait
