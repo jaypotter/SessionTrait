@@ -37,4 +37,14 @@ trait SessionTrait
     {
         session_name($name);
     }
+    
+    final public function getSavePath(): string
+    {
+        return (($path = session_save_path()) !== false) ? $path : '';
+    }
+    
+    final protected function setSavePath(string $path): void
+    {
+        session_save_path($path);
+    }
 }
