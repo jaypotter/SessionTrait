@@ -8,7 +8,10 @@ use \PHP_SESSION_ACTIVE;
 
 trait SessionTrait
 {
-    abstract public function activate(): void;
+    final public function activate(): void
+    {
+        session_start();
+    }
     
     final public function isActive(): bool
     {
