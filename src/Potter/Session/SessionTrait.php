@@ -15,7 +15,7 @@ trait SessionTrait
     
     final public function isActive(): bool
     {
-        return session_status === PHP_SESSION_ACTIVE;
+        return session_status() === PHP_SESSION_ACTIVE;
     }
     
     final public function getId(): string
